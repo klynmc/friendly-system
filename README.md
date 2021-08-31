@@ -1,1 +1,1 @@
-# friendly-system
+# Random Password Generator
