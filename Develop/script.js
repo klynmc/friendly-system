@@ -3,7 +3,7 @@
 //DOM elements
 const passwordEl = document.getElementById('password');
 const lengthEl = document.getElementById('length');
-const uppercase = document.getElementById('uppercase');
+const uppercaseEl = document.getElementById('uppercase');
 const lowercaseEl = document.getElementById('lowercase');
 const numbersEl = document.getElementById('numbers');
 const symbolsEl = document.getElementById('symbols');
@@ -15,6 +15,22 @@ const randomFunc = {
   number: getRandomNumber,
   symbol: getRandomSymbol
 };
+
+// Add event listener to generate button
+generateEl.addEventListener("click", () => {
+  const length = +lengthEl.value;
+  const hasLower = lowercaseEl.checked;
+  const hasUpper = uppercaseEl.checked;
+  const hasNumber = numbersEl.checked;
+  const hasSymbol = symbolsEl.checked;
+
+  passwordEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
+});
+
+// Generate password function
+function generatePassword(lower, upper, number, symbol, length) {
+
+}
 
 //random lowercase letters
 function getRandomLower() {
@@ -42,19 +58,27 @@ function getRandomSymbol() {
 };
 
 // Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+//var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
-function writePassword() {
-  var password = generatePassword(); 
-  var passwordText = document.querySelector("#password");
+//function writePassword() {
+  //var password = generatePassword(); 
+  //var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  //passwordText.value = password;
 
-}
+//}
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+//generateBtn.addEventListener("click", writePassword); {
+  //const length = +lengthEl.value;
+  //const hasLower = lowercaseEl.checked;
+  //const hasUpper = uppercaseEl.checked;
+  //const hasNumber = numberEl.checked;
+  //const hasSymbol = symbolEl.checked;
+
+  //console.log(hasLower, hasUpper, hasNumber, hasSymbol);
+//};
 
 // SOURCES: 
 //https://youtu.be/duNmhKgtcsI
