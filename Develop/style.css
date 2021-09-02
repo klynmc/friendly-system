@@ -54,6 +54,12 @@ header {
   min-height: 100px;
 }
 
+/*MY CODE*/
+.setting {
+  text-align: left;
+}
+/*MY CODE*/
+
 .card-footer {
   text-align: center;
 }
