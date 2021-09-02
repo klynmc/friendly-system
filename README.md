@@ -9,4 +9,4 @@ A website which makes random passwords
 * JavaScript
 
 ## Website
-(enter website here)
+https://klynmc.github.io/friendly-system/Develop/
