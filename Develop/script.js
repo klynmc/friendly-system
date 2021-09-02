@@ -90,4 +90,4 @@ function getRandomSymbol() {
 //https://youtu.be/duNmhKgtcsI
 //https://youtu.be/iKo9pDKKHnc
 
-/*generator functions - http://www.net-comber.com/charset.html*/
+//generator functions - http://www.net-comber.com/charset.html
